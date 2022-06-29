@@ -13,6 +13,8 @@
 
 ## Goal of this library
 
+Danger is a CI tool we use to perform checks during a Merge Request. This library includes all our common and platform specific Danger checks.
+
 ## Supported platforms
 
 - Android
