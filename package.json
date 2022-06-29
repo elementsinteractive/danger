@@ -4,14 +4,14 @@
   "author": "Makerstreet - Elements",
   "repository": {
     "type": "git",
-    "url": "git://github.com/elementsinteractive/danger.git"
+    "url": "https://github.com/elementsinteractive/danger.git"
   },
   "keywords": [
     "danger",
     "danger-plugin",
     "elements"
   ],
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "bin": {
@@ -26,11 +26,11 @@
     "predocs": "rm -rf docs/",
     "docs": "esdoc -c .esdoc.json",
     "prepare": "npm run build",
-    "semantic-release": "semantic-release pre && npm run publish && semantic-release post",
     "prettier": "prettier",
     "prettier-write": "yarn prettier -- --parser typescript --no-semi --trailing-comma all --write --print-width 120",
     "prettier-project": "yarn prettier-write -- 'src/**/*.{ts,tsx}'",
-    "lint": "eslint \"src/**/*.ts\""
+    "lint": "eslint \"src/**/*.ts\"",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "engines": {
@@ -88,5 +88,21 @@
       "\\.snap$",
       "<rootDir>/node_modules/"
     ]
-  }
+  },
+   "release":{
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
+   }
 }
