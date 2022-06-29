@@ -42,7 +42,7 @@
     "@octokit/rest": "^18.12.0",
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
+    "@typescript-eslint/parser": "^5.30.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "danger": "*",
