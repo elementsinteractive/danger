@@ -3,6 +3,8 @@ import { forEach } from 'lodash'
 import { isChangelogModified, isDocumentationModified } from './util'
 import { DOD_MESSAGES } from './constants'
 
+import  { Gitlab } from "@gitbeaker/node"
+
 /**
  * Runs common danger checks for all projects
  */
@@ -26,4 +28,8 @@ export const common = (danger: DangerDSLType) => {
   }
 
   forEach(DOD_MESSAGES, msg => message(msg))
+
+  const gitlab = new Gitlab({})
+
+  gitlab.MergeRequestApprovals.addApprovalRule(process.env.CI_PROJECT_ID as string, 'Test', 1)
 }

@@ -106,5 +106,8 @@
   "homepage": "https://github.com/elementsinteractive/danger#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@gitbeaker/node": "^35.6.0"
   }
 }
