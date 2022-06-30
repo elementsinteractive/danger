@@ -13,6 +13,11 @@
   ],
   "version": "1.0.0",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "types"
+  ],
   "types": "dist/types.d.ts",
   "bin": {
     "elements-danger": "dist/index.js"
@@ -34,6 +39,9 @@
   "license": "MIT",
   "engines": {
     "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "@gitbeaker/node": "^35.6.0"
   },
   "devDependencies": {
     "@octokit/core": "^3.6.0",
@@ -107,8 +115,5 @@
   "homepage": "https://github.com/elementsinteractive/danger#readme",
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@gitbeaker/node": "^35.6.0"
   }
 }
