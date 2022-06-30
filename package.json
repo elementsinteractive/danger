@@ -41,7 +41,8 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "@gitbeaker/node": "^35.6.0"
+    "@gitbeaker/node": "^35.6.0",
+    "http-proxy-agent": "^5.0.0"
   },
   "devDependencies": {
     "@octokit/core": "^3.6.0",
@@ -56,6 +57,7 @@
     "eslint": "^8.17.0",
     "form-data": "^4.0.0",
     "gitlab": "^14.2.2",
+    "https-proxy-agent": "^5.0.1",
     "husky": "^8.0.1",
     "jest": "^28.1.2",
     "lint-staged": "^3.4.1",

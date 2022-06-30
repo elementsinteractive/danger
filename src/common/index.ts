@@ -29,7 +29,7 @@ export const common = (danger: DangerDSLType) => {
 
   forEach(DOD_MESSAGES, msg => message(msg))
 
-  const gitlab = new Gitlab({})
+  const gitlab = new Gitlab({ token: process.env.GITLAB_TOKEN })
 
   gitlab.MergeRequestApprovals.addApprovalRule(process.env.CI_PROJECT_ID as string, 'Test', 1)
 }
