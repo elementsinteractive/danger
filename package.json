@@ -103,5 +103,8 @@
   "bugs": {
     "url": "https://github.com/elementsinteractive/danger/issues"
   },
-  "homepage": "https://github.com/elementsinteractive/danger#readme"
+  "homepage": "https://github.com/elementsinteractive/danger#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
