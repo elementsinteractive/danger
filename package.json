@@ -4,18 +4,18 @@
   "author": "Makerstreet - Elements",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elementsinteractive/danger.git"
+    "url": "git+https://github.com/elementsinteractive/danger.git"
   },
   "keywords": [
     "danger",
     "danger-plugin",
     "elements"
   ],
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "bin": {
-    "elements-danger": "./dist/index.js"
+    "elements-danger": "dist/index.js"
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -84,7 +84,7 @@
       "<rootDir>/node_modules/"
     ]
   },
-   "release":{
+  "release": {
     "branches": [
       "+([0-9])?(.{+([0-9]),x}).x",
       "main",
@@ -99,5 +99,9 @@
         "prerelease": true
       }
     ]
-   }
+  },
+  "bugs": {
+    "url": "https://github.com/elementsinteractive/danger/issues"
+  },
+  "homepage": "https://github.com/elementsinteractive/danger#readme"
 }
