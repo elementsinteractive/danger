@@ -23,9 +23,7 @@
     "commitmsg": "validate-commit-msg",
     "build": "tsc",
     "test": "jest",
-    "predocs": "rm -rf docs/",
-    "docs": "esdoc -c .esdoc.json",
-    "prepare": "npm run build",
+    "prepublish": "yarn build",
     "prettier": "prettier",
     "prettier-write": "yarn prettier -- --parser typescript --no-semi --trailing-comma all --write --print-width 120",
     "prettier-project": "yarn prettier-write -- 'src/**/*.{ts,tsx}'",
@@ -58,9 +56,6 @@
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.2",
     "validate-commit-msg": "^2.12.1"
-  },
-  "optionalDependencies": {
-    "esdoc": "^0.5.2"
   },
   "config": {
     "commitizen": {
