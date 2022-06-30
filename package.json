@@ -24,6 +24,7 @@
     "build": "tsc",
     "test": "jest",
     "prepublish": "yarn build",
+    "prepare": "yarn build",
     "prettier": "prettier",
     "prettier-write": "yarn prettier -- --parser typescript --no-semi --trailing-comma all --write --print-width 120",
     "prettier-project": "yarn prettier-write -- 'src/**/*.{ts,tsx}'",
