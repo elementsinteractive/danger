@@ -31,5 +31,10 @@ export const common = (danger: DangerDSLType) => {
 
   const gitlab = new Gitlab({ jobToken: process.env.GITLAB_TOKEN })
 
-  gitlab.MergeRequestApprovals.addApprovalRule(process.env.CI_PROJECT_ID as string, 'Test', 1)
+  gitlab.MergeRequestApprovals.addApprovalRule(
+    process.env.CI_PROJECT_ID as string,
+    'Test',
+    1,
+    { mergerequestIid: Number(process.env.CI_MERGE_REQUEST_IID) },
+  )
 }
