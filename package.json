@@ -14,9 +14,6 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "bin": {
-    "elements-danger": "dist/index.js"
-  },
   "scripts": {
     "precommit": "lint-staged",
     "commit": "git-cz",
