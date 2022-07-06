@@ -39,9 +39,9 @@ At a glance:
 
 ```js
 // dangerfile.js
-import dangerElements from '@elements/danger'
+const dangerElements = require('@makerstreet/danger').default
 
-dangerElements()
+dangerElements('android')
 ```
 
 ## Changelog
