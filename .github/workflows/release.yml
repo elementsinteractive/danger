@@ -26,4 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          cat .npmrc
+          npx semantic-release
