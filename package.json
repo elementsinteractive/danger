@@ -14,9 +14,6 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "bin": {
-    "elements-danger": "dist/index.js"
-  },
   "scripts": {
     "precommit": "lint-staged",
     "commit": "git-cz",
@@ -33,6 +30,10 @@
   "license": "MIT",
   "engines": {
     "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "danger": "11.1.1"
   },
   "devDependencies": {
     "@octokit/core": "^3.6.0",
