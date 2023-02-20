@@ -32,8 +32,8 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "lodash": "4.17.21",
-    "danger": "11.2.3"
+    "danger": "11.2.3",
+    "lodash": "4.17.21"
   },
   "devDependencies": {
     "@octokit/core": "^4.2.0",
@@ -56,6 +56,7 @@
     "semantic-release": "^19.0.3",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4",
+    "undici": "^5.20.0",
     "validate-commit-msg": "^2.12.1"
   },
   "config": {
