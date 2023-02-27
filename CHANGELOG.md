@@ -16,6 +16,25 @@ Types of changes:
 
 ## [Unreleased]
 
+## 1.0.3
+
+### Fixed
+
+- Added `undici` as dev dependency with latest version due to this [bug](https://github.com/nodejs/node/issues/46713)
+
+## 1.0.1
+
+### Fixed
+
+- Removed `bin` from `package.json`
+- Added `danger` and `lodash` as direct dependencies
+
+## 1.0.0
+
+### Added
+
+- Initial release
+
 ## 0.0.1 - 06-07-2022
 
 ### Added
